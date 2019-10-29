@@ -1,0 +1,10 @@
+<h1>Task (done or not)</h1>
+<p>Task to do: <%=  @task.title%> </p>
+<p> Details: <%=  @task.details%> </p>
+
+
+     <% if @task.completed == true %>
+      <p><input type="checkbox" checked="checked" >task is done> </p>
+     <% else %>
+      <p><input type="checkbox">not done</p>
+    <% end %>
